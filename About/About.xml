@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+    <name>[SYR] Blueberries</name>
+    <author>Syrchalis</author>
+    <targetVersion>0.19.1998</targetVersion>
+    <description>Adds blueberries, blueberry wine and bluciferum.
+
+Blueberry bushes are slow growing, rather sensitive to fertility and have a ramp up period. They yield blueberries which can be ingested to help with recovery from illness. They can also be made into mash which can be fermented into valuable blueberry wine or processed into Bluciferum, a drug similar to penoxycyline which is taken after infection (instead of before like penoxycyline) to help with recovery.
+
+They can also be used as food or made into meals, however that is not a very efficient way of using them.</description>
+</ModMetaData>

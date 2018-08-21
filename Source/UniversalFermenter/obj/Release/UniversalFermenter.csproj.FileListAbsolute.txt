@@ -1,0 +1,16 @@
+C:\Users\Syrchalis\Desktop\Fermenting\Source\UniversalFermenter\obj\Release\UniversalFermenter.csprojAssemblyReference.cache
+C:\Users\Syrchalis\Desktop\Fermenting\Source\UniversalFermenter\obj\Release\UniversalFermenter.csproj.CoreCompileInputs.cache
+C:\Users\Syrchalis\Desktop\Fermenting\Source\UniversalFermenter\bin\Release\UniversalFermenter.dll
+C:\Users\Syrchalis\Desktop\Fermenting\Source\UniversalFermenter\bin\Release\UniversalFermenter.pdb
+C:\Users\Syrchalis\Desktop\Fermenting\Source\UniversalFermenter\obj\Release\UniversalFermenter.dll
+C:\Users\Syrchalis\Desktop\Fermenting\Source\UniversalFermenter\obj\Release\UniversalFermenter.pdb
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\UniversalFermenter\Source\UniversalFermenter\bin\Release\UniversalFermenter.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\UniversalFermenter\Source\UniversalFermenter\bin\Release\UniversalFermenter.pdb
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\UniversalFermenter\Source\UniversalFermenter\obj\Release\UniversalFermenter.csprojAssemblyReference.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\UniversalFermenter\Source\UniversalFermenter\obj\Release\UniversalFermenter.csproj.CoreCompileInputs.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\UniversalFermenter\Source\UniversalFermenter\obj\Release\UniversalFermenter.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\UniversalFermenter\Assemblies\UniversalFermenter.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\SYR_Blueberries\Assemblies\UniversalFermenter.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\SYR_Blueberries\Source\UniversalFermenter\obj\Release\UniversalFermenter.csprojAssemblyReference.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\SYR_Blueberries\Source\UniversalFermenter\obj\Release\UniversalFermenter.csproj.CoreCompileInputs.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\SYR_Blueberries\Source\UniversalFermenter\obj\Release\UniversalFermenter.dll
