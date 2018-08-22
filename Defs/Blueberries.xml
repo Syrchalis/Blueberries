@@ -50,7 +50,7 @@
 	<label>blueberries</label>
 	<description>Blue colored berry that grows in bushes. Nice to eat, even when raw. Can be fermented into blueberry wine, which is very valuable or into a medical drug, which helps boost the immune system. Alternatively they can be eaten raw to get the same effect as from wine, albeit with a much shorter duration.</description>
 	<graphicData>
-      <texPath>Things/Item/Resource/Blueberries</texPath>
+      <texPath>Things/Item/Resource/PlantFoodRaw/Blueberries</texPath>
     </graphicData>
     <statBases>
       <MarketValue>2.0</MarketValue>
