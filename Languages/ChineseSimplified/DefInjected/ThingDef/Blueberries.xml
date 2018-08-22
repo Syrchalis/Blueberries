@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <Plant_Blueberry.label>蓝莓</Plant_Blueberry.label>
+  <Plant_Blueberry.description>一种生长在灌木上的蓝色浆果，需要肥沃的土壤才能快速生长。
+
+
+
+蓝莓可以定期收获，而不必再次播种，但新种植的蓝莓必须生长一段时间才能收获。这些蓝莓经过基因改造，不仅味道不错，而且有助于增强免疫系统。它们可以制成昂贵的蓝莓酒或药物。</Plant_Blueberry.description>
+
+  <RawBlueberries.label>蓝莓</RawBlueberries.label>
+  <RawBlueberries.description>生长在灌木上的蓝色浆果。即使是生的也很不错。可以发酵成昂贵的蓝莓酒，或制成一种有助于提高免疫能力的药物。另外，它们可以生吃。以获得与蓝莓酒相同的效果，尽管其持续时间要短得多。</RawBlueberries.description>
+
+  <Mash.label>蓝莓汁</Mash.label>
+  <Mash.description>未发酵的蓝莓汁。需要在发酵桶发酵才能变成可饮用的蓝莓酒。发酵时间是麦芽汁的两倍。</Mash.description>
+
+  <BlueberryWine.label>蓝莓酒</BlueberryWine.label>
+  <BlueberryWine.description>蓝莓酿造的果酒。它比啤酒更容易喝醉，但也提供类似蓝莓的免疫力增强功效。需要很长时间才能完成发酵，但是价值很高，适合酿造后进行销售。</BlueberryWine.description>
+  <BlueberryWine.ingestible.ingestCommandString>喝{0}</BlueberryWine.ingestible.ingestCommandString>
+  <BlueberryWine.ingestible.ingestReportString>正在喝{0}。</BlueberryWine.ingestible.ingestReportString>
+
+  <Bluciferum.label>蓝莓合剂</Bluciferum.label>
+  <Bluciferum.description>蓝莓免疫物质的精炼版本，提高疾病恢复的效率。唯一的副作用就是会感觉很疲惫。尽管它的名字（bluciferum）与路西法合剂（luciferium）很相似。但它既不会让你上瘾也没有类似的副作用，这个名字仅仅是闪耀世界药物公司的一种营销技巧。
+
+它也有助于治愈肠道蠕虫和肌肉寄生虫，虽然这可能需要超过一剂的蓝莓合剂。蓝莓合剂也可以加速纤维纳米机械感染和感官纳米机械感染的恢复。当然它不会以任何方式影响到路西法合剂中的纳米机械。</Bluciferum.description>
+  <Bluciferum.ingestible.ingestCommandString>施用 {0}</Bluciferum.ingestible.ingestCommandString>
+  <Bluciferum.ingestible.ingestReportString>施用 {0}。</Bluciferum.ingestible.ingestReportString>
+
+
+</LanguageData>
