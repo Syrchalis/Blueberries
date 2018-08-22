@@ -11,24 +11,5 @@
 			<li>Make_Mash</li>
 		  </value>
 	</Operation>
-	
-	<!-- Allow Brewery to be made of bamboo -->
-	<Operation Class="PatchOperationRemove">
-		<xpath>/Defs/ThingDef[defName="Brewery"]/costList/WoodLog</xpath>
-	</Operation>
-	
-	<Operation Class="PatchOperationRemove">
-		<xpath>/Defs/ThingDef[defName="Brewery"]/constructEffect</xpath>
-	</Operation>
-	
-	<Operation Class="PatchOperationAdd">
-		<xpath>/Defs/ThingDef[defName="Brewery"]</xpath>
-		<value>
-			<costStuffCount>120</costStuffCount>
-			<stuffCategories>
-				<li>Woody</li>
-			</stuffCategories>
-		</value>
-	</Operation>
 
 </Patch>
