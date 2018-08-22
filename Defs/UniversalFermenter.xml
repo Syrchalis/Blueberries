@@ -31,8 +31,11 @@
     </statBases>
     <costList>
       <Steel>10</Steel>
-      <WoodLog>30</WoodLog>
     </costList>
+	<costStuffCount>30</costStuffCount>
+	<stuffCategories>
+		<li>Woody</li>
+	</stuffCategories>
     <comps>
       <li Class="CompProperties_TemperatureRuinable">
         <minSafeTemperature>-1</minSafeTemperature>
@@ -65,7 +68,6 @@
     <tickerType>Rare</tickerType>
     <rotatable>true</rotatable>
     <designationCategory>Production</designationCategory>
-    <constructEffect>ConstructWood</constructEffect>
     <researchPrerequisites>
       <li>Brewing</li>
     </researchPrerequisites>

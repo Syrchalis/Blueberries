@@ -1,8 +1,34 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
-<!-- Removes normal fermenting barrel, because it has use over the universal fementing barrel -->
+<!-- Removes normal fermenting barrel, because it has no use over the universal fermenting barrel -->
 	<Operation Class="PatchOperationRemove">
 	  <xpath>*/ThingDef[defName = "FermentingBarrel"]/designationCategory</xpath>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName = "Brewery"]/recipes</xpath>
+		  <value>
+			<li>Make_Mash</li>
+		  </value>
+	</Operation>
+	
+	<!-- Allow Brewery to be made of bamboo -->
+	<Operation Class="PatchOperationRemove">
+		<xpath>/Defs/ThingDef[defName="Brewery"]/costList/WoodLog</xpath>
+	</Operation>
+	
+	<Operation Class="PatchOperationRemove">
+		<xpath>/Defs/ThingDef[defName="Brewery"]/constructEffect</xpath>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef[defName="Brewery"]</xpath>
+		<value>
+			<costStuffCount>120</costStuffCount>
+			<stuffCategories>
+				<li>Woody</li>
+			</stuffCategories>
+		</value>
 	</Operation>
 
 </Patch>
