@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <UniversalFermenter.label>发酵桶</UniversalFermenter.label>
+  <UniversalFermenter.description>个将麦芽汁发酵成啤酒的桶。</UniversalFermenter.description>
+  <UniversalFermenter_Blueprint.label>发酵桶（蓝图）</UniversalFermenter_Blueprint.label>
+  <UniversalFermenter_Blueprint_Install.label>发酵桶（蓝图）</UniversalFermenter_Blueprint_Install.label>
+  <UniversalFermenter_Frame.label>发酵桶（建造中）</UniversalFermenter_Frame.label>
+  <UniversalFermenter_Frame.description>个将麦芽汁发酵成啤酒的桶。</UniversalFermenter_Frame.description>
+
+
+</LanguageData>
