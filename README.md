@@ -21,3 +21,6 @@ This mod comes with the mod "universal fermenter" - as user this is pretty much 
 Originally Universal Fermenter is made by Kubouch
 Updated to 1.0 by me
 Blueberry plant texture is from VG
+
+#### You can support me and help me speed up mod development for a small price: 
+[![ko-fi](https://www.ko-fi.com/img/donate_sm.png)](https://ko-fi.com/A0A0IJ2R)
