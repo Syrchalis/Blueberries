@@ -11,5 +11,12 @@
 			<li>Make_Mash</li>
 		  </value>
 	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/RecipeDef[@Name = "CookMealBase"]/defaultIngredientFilter/disallowedThingDefs</xpath>
+		<value>
+			<li>RawBlueberries</li>
+		</value>
+	</Operation> 
 
 </Patch>
