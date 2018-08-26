@@ -193,6 +193,11 @@
     </ingestible>
       <comps>
 		<li Class="CompProperties_Drug">
+		    <chemical>Alcohol</chemical>
+			<addictiveness>0.010</addictiveness>
+			<minToleranceToAddict>0.25</minToleranceToAddict>
+			<existingAddictionSeverityOffset>0.20</existingAddictionSeverityOffset>
+			<needLevelOffset>1</needLevelOffset>
 			<listOrder>1201</listOrder>
 		</li>
       </comps>
