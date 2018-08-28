@@ -53,7 +53,7 @@
       <texPath>Things/Item/Resource/PlantFoodRaw/Blueberries</texPath>
     </graphicData>
     <statBases>
-      <MarketValue>2.0</MarketValue>
+      <MarketValue>3.0</MarketValue>
 	  <Mass>0.027</Mass>
       <FoodPoisonChanceFixedHuman>0.0</FoodPoisonChanceFixedHuman>
     </statBases>
@@ -95,7 +95,7 @@
     </thingCategories>
     <statBases>
       <DeteriorationRate>1.0</DeteriorationRate>
-      <MarketValue>10.0</MarketValue>
+      <MarketValue>15.0</MarketValue>
       <Mass>0.8</Mass>
       <Flammability>0.2</Flammability>
 			<MaxHitPoints>60</MaxHitPoints>
@@ -216,7 +216,7 @@ It also helps cure Gut Worms and Muscle Parasites, though more than one dose of 
     <rotatable>false</rotatable>
     <statBases>
       <WorkToMake>600</WorkToMake>
-      <MarketValue>44</MarketValue>
+      <MarketValue>36</MarketValue>
       <Mass>0.005</Mass>
       <Flammability>0.3</Flammability>
     </statBases>
