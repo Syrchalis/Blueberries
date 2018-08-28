@@ -149,12 +149,11 @@
 		  <texPath>Things/Item/Resource/Blueberrywine</texPath>
 		  <graphicClass>Graphic_StackCount</graphicClass>
 	  </graphicData>
-	  <equippedAngleOffset>-150</equippedAngleOffset>
 	  <rotatable>false</rotatable>
 	  <stackLimit>25</stackLimit>
       <statBases>
 		  <DeteriorationRate>0.5</DeteriorationRate>
-		  <MarketValue>36</MarketValue>
+		  <MarketValue>27</MarketValue>
 		  <Mass>0.1</Mass>
 		  <Flammability>0.5</Flammability>
       </statBases>
@@ -217,7 +216,7 @@ It also helps cure Gut Worms and Muscle Parasites, though more than one dose of 
     <rotatable>false</rotatable>
     <statBases>
       <WorkToMake>600</WorkToMake>
-      <MarketValue>18</MarketValue>
+      <MarketValue>44</MarketValue>
       <Mass>0.005</Mass>
       <Flammability>0.3</Flammability>
     </statBases>
@@ -241,8 +240,8 @@ It also helps cure Gut Worms and Muscle Parasites, though more than one dose of 
       </recipeUsers>
     </recipeMaker>
     <costList>
-	  <RawBlueberries>4</RawBlueberries>
-      <Neutroamine>1</Neutroamine>
+	  <RawBlueberries>8</RawBlueberries>
+      <Neutroamine>2</Neutroamine>
     </costList>
     <comps>
       <li Class="CompProperties_Drug">
