@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+<!-- Removes normal fermenting barrel, because it has no use over the universal fermenting barrel -->
+	<Operation Class="PatchOperationRemove">
+	  <xpath>*/ThingDef[defName = "FermentingBarrel"]/designationCategory</xpath>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName = "Brewery"]/recipes</xpath>
+		  <value>
+			<li>Make_Mash</li>
+		  </value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/RecipeDef[@Name = "CookMealBase"]/defaultIngredientFilter/disallowedThingDefs</xpath>
+		<value>
+			<li>RawBlueberries</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationSequence">
+	  <success>Always</success>
+	  <operations>
+		<li Class="PatchOperationTest">
+		  <xpath>Defs/ThingDef[defName = "Rawblueberry"]</xpath>
+		</li>	
+		<li Class="PatchOperationRemove">
+		  <xpath>Defs/ThingDef[defName = "Rawblueberry"]</xpath>
+		</li>
+		<li Class="PatchOperationRemove">
+		  <xpath>Defs/ThingDef[defName = "Plantblueberry"]</xpath>
+		</li>
+	  </operations>
+	</Operation>
+
+</Patch>

@@ -2,7 +2,7 @@
 <Defs>
 
   <ThingDef ParentName="PlantBase">
-	<defName>Plant_Blueberry</defName>
+	<defName>Plant_SyrBlueberry</defName>
 	<label>blueberry plant</label>
 	<description>A blue colored berry that grows on bushes, requires good soil to grow quickly. 
 	
@@ -41,7 +41,7 @@
 	  </visualSizeRange>
 	  <topWindExposure>0.3</topWindExposure>
       <wildOrder>2</wildOrder>
-	  <purpose>Misc</purpose>
+	  <purpose>Health</purpose>
    </plant>
   </ThingDef>
 
