@@ -38,10 +38,10 @@
 	  <success>Always</success>
 	  <operations>
 		<li Class="PatchOperationTest">
-		  <xpath>Defs/ThingDef[defName = "BrewBlueberrySoda"]</xpath>
+		  <xpath>Defs/RecipeDef[defName = "BrewBlueberrySoda"]</xpath>
 		</li>	
 		<li Class="PatchOperationRemove">
-		  <xpath>Defs/ThingDef[defName = "BrewBlueberrySoda"]</xpath>
+		  <xpath>Defs/RecipeDef[defName = "BrewBlueberrySoda"]</xpath>
 		</li>
 	  </operations>
 	</Operation>
