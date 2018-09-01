@@ -18,5 +18,6 @@ namespace Bluciferum
         public static HediffDef GutWorms;
         public static HediffDef FibrousMechanites;
         public static HediffDef SensoryMechanites;
+        public static RecipeDef AdministerBlueberries;
     }
 }

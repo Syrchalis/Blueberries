@@ -297,4 +297,32 @@ It also helps cure Gut Worms and Muscle Parasites, though more than one dose of 
       </stages>
   </HediffDef>
   
+  <RecipeDef>
+    <defName>AdministerBlueberries</defName>
+    <label>administer blueberries</label>
+    <description>Administer blueberries.</description>
+    <workerClass>Recipe_AdministerIngestible</workerClass>
+    <jobString>Administering blueberries.</jobString>
+    <targetsBodyPart>false</targetsBodyPart>
+    <anesthetize>false</anesthetize>
+    <workAmount>600</workAmount>
+    <dontShowIfAnyIngredientMissing>true</dontShowIfAnyIngredientMissing>
+    <surgerySuccessChanceFactor>99999</surgerySuccessChanceFactor>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>RawBlueberries</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>RawBlueberries</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+  </RecipeDef>
+  
 </Defs>
