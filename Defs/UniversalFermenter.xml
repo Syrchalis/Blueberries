@@ -4,7 +4,7 @@
   <ThingDef ParentName="BuildingBase">
     <defName>UniversalFermenter</defName>
     <label>fermenting barrel</label>
-    <description>A barrel for fermenting raw wort into beer.</description>
+    <description>A barrel for fermenting plant matter.</description>
     <graphicData>
       <texPath>Things/Building/Production/FermentingBarrel</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
