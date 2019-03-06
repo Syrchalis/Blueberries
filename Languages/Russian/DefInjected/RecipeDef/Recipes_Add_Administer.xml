@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+	<Administer_BlueberryWine.label>изготовить черничное вино</Administer_BlueberryWine.label>
+	<Administer_BlueberryWine.jobString>готовится черничное вино</Administer_BlueberryWine.jobString>
+        <Administer_Bluciferum.label>изготовить блюциферий</Administer_Bluciferum.label>
+        <Administer_Bluciferum.jobString>готовит блюциферий</Administer_Bluciferum.jobString>
+</LanguageData>
