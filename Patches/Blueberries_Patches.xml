@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
-<!-- Removes normal fermenting barrel, because it has no use over the universal fermenting barrel -->
+<!-- Removes normal fermenting barrel, because it has no use over the universal fermenting barrel 
 	<Operation Class="PatchOperationRemove">
 	  <xpath>*/ThingDef[defName = "FermentingBarrel"]/designationCategory</xpath>
-	</Operation>
+	</Operation>-->
 	
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[defName = "Brewery"]/recipes</xpath>
