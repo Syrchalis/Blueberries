@@ -35,10 +35,7 @@
       <fertilitySensitivity>1.25</fertilitySensitivity>
 	  <harvestAfterGrowth>0.33</harvestAfterGrowth>
       <immatureGraphicPath>Things/Plant/BlueberryPlantImmature</immatureGraphicPath>
-	  <visualSizeRange>
-        <min>0.3</min>
-        <max>1.05</max>
-	  </visualSizeRange>
+	  <visualSizeRange>0.3~1.05</visualSizeRange>
 	  <topWindExposure>0.3</topWindExposure>
       <wildOrder>2</wildOrder>
 	  <purpose>Health</purpose>
@@ -253,6 +250,7 @@ It also helps cure Gut Worms and Muscle Parasites, though more than one dose of 
   
   <HediffDef>
     <defName>BlueberryHigh</defName>
+	<description>The pawn has been taken blueberries</description>
     <label>Blueberries</label>
     <defaultLabelColor>(0,0.7,1)</defaultLabelColor>
     <hediffClass>HediffWithComps</hediffClass>
@@ -277,6 +275,7 @@ It also helps cure Gut Worms and Muscle Parasites, though more than one dose of 
   
   <HediffDef>
     <defName>BluciferumHigh</defName>
+	<description>The pawn has been taken bluciferum, which helps them heal</description>
     <label>Bluciferum</label>
     <defaultLabelColor>(0,0.4,1)</defaultLabelColor>
     <hediffClass>HediffWithComps</hediffClass>
