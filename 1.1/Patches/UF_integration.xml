@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<!-- Patch us into the Universal Fermenter -->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName = "UniversalFermenter"]/comps/li[@Class="UniversalFermenter.CompProperties_UniversalFermenter"]/products</xpath>
+		  <value>
+			<li>
+				<thingDef>BlueberryWine</thingDef>
+				<ingredientFilter>
+					<thingDefs>
+						<li>Mash</li>
+					</thingDefs>
+				</ingredientFilter>
+				<baseFermentationDuration>900000</baseFermentationDuration>
+			</li>
+		  </value>
+	</Operation>
+
+</Patch>

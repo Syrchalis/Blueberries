@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<!-- patch other mods -->
+	<Operation Class="PatchOperationSequence">
+	  <success>Always</success>
+	  <operations>
+		<li Class="PatchOperationTest">
+		  <xpath>Defs/RecipeDef[defName = "BrewBlueberrySoda"]</xpath>
+		</li>	
+		<li Class="PatchOperationRemove">
+		  <xpath>Defs/RecipeDef[defName = "BrewBlueberrySoda"]</xpath>
+		</li>
+	  </operations>
+	</Operation>
+
+	<Operation Class="PatchOperationSequence">
+	  <success>Always</success>
+	  <operations>
+		<li Class="PatchOperationTest">
+		  <xpath>Defs/ThingDef[defName = "VG_LargeFermentingBarrel"]</xpath>
+		</li>	
+		<li Class="PatchOperationAdd">
+		  <xpath>Defs/ThingDef[defName = "VG_LargeFermentingBarrel"]/comps/li[contains(@Class,'CompProperties_UniversalFermenter')]/products</xpath>
+				<value>
+					<li>
+						<thingDef>BlueberryWine</thingDef>
+						<ingredientFilter>
+							<thingDefs>
+								<li>Mash</li>
+							</thingDefs>
+						</ingredientFilter>
+						<maxCapacity>100</maxCapacity>
+						<baseFermentationDuration>750000</baseFermentationDuration>
+					</li>
+				</value>
+		</li>
+	  </operations>
+	</Operation>
+
+</Patch>

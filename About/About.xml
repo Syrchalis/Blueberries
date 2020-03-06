@@ -14,6 +14,11 @@
 			<steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl>
 			<downloadUrl>https://github.com/pardeike/HarmonyRimWorld/releases/latest</downloadUrl>
 		</li>
+		 <li>
+			<packageId>Mantrasong.Processors</packageId>
+			<displayName>Universal Fermenter</displayName>
+			<!--<steamWorkshopUrl>steam://url/CommunityFilePage/818773962</steamWorkshopUrl>-->
+		  </li>
 	</modDependencies>
     <description>Adds blueberries, blueberry wine and bluciferum.
 
