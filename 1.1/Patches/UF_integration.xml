@@ -3,7 +3,7 @@
 
 	<!-- Patch us into the Universal Fermenter -->
 	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/ThingDef[defName = "UniversalFermenter"]/comps/li[@Class="UniversalFermenter.CompProperties_UniversalFermenter"]/products</xpath>
+		<xpath>Defs/ThingDef[defName = "UniversalFermenter"]/comps/li[@Class="UniversalProcessors.CompProperties_UniversalFermenter"]/products</xpath>
 		  <value>
 			<li>
 				<thingDef>BlueberryWine</thingDef>
