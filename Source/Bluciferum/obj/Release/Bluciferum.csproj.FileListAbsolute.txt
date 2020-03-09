@@ -1,5 +1,5 @@
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\SYR_Blueberries\Assemblies\Bluciferum.dll
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\SYR_Blueberries\Source\Bluciferum\obj\Release\Bluciferum.csprojAssemblyReference.cache
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\SYR_Blueberries\Source\Bluciferum\obj\Release\Bluciferum.csproj.CoreCompileInputs.cache
-C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\SYR_Blueberries\Source\Bluciferum\obj\Release\Bluciferum.csproj.CopyComplete
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\SYR_Blueberries\Source\Bluciferum\obj\Release\Bluciferum.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\SYR_Blueberries\1.1\Assemblies\Bluciferum.dll

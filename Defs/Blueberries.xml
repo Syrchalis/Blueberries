@@ -35,10 +35,7 @@
       <fertilitySensitivity>1.25</fertilitySensitivity>
 	  <harvestAfterGrowth>0.33</harvestAfterGrowth>
       <immatureGraphicPath>Things/Plant/BlueberryPlantImmature</immatureGraphicPath>
-	  <visualSizeRange>
-        <min>0.3</min>
-        <max>1.05</max>
-	  </visualSizeRange>
+	  <visualSizeRange>0.3~1.0</visualSizeRange>
 	  <topWindExposure>0.3</topWindExposure>
       <wildOrder>2</wildOrder>
 	  <purpose>Health</purpose>
@@ -254,6 +251,7 @@ It also helps cure Gut Worms and Muscle Parasites, though more than one dose of 
   <HediffDef>
     <defName>BlueberryHigh</defName>
     <label>Blueberries</label>
+    <description>A mildly positive effect on the body's immune system caused by the ingestion of blueberries.</description>
     <defaultLabelColor>(0,0.7,1)</defaultLabelColor>
     <hediffClass>HediffWithComps</hediffClass>
 	<maxSeverity>1.0</maxSeverity>
@@ -278,6 +276,7 @@ It also helps cure Gut Worms and Muscle Parasites, though more than one dose of 
   <HediffDef>
     <defName>BluciferumHigh</defName>
     <label>Bluciferum</label>
+    <description>A strong positive effect on the body's immune system caused by the ingestion of refined blueberry extract in the form of bluciferum.</description>
     <defaultLabelColor>(0,0.4,1)</defaultLabelColor>
     <hediffClass>HediffWithComps</hediffClass>
 	<maxSeverity>1.0</maxSeverity>
