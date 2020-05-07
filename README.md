@@ -15,12 +15,5 @@ Blueberry wine acts mostly like beer, but gives more joy and makes a bit more dr
 Bluciferum is made from four blueberries and one neutroamine. It gives the blueberry buff for a day as well as another buff that gives immunity gain speed. Side effect is tiredness.
 IMPORTANT: Bluciferum acts as 100% tend for muscle parasites and gut worms (even if they are already tended!) and it reduces the remaining duration of fibrous and sensory mechanites by 2 days. Instantly cures food poisoning.
 
-### Universal Fermenter
-This mod comes with the mod "universal fermenter" - as user this is pretty much irrelevant for you. The fermenting barrel gets replaced by a universal one which can ferment different things, depending on it's setting. However, this means if you add this to an existing save in which you have fermenting barrels, they might disappear - either way, you will need to reconstruct them, as your old ones will not be automatically replaced by the universal ones.
-
-Originally Universal Fermenter is made by Kubouch
-Updated to 1.0 by me
-Blueberry plant texture is from VG
-
 #### You can support me and help me speed up mod development for a small price: 
 [![ko-fi](https://www.ko-fi.com/img/donate_sm.png)](https://ko-fi.com/A0A0IJ2R)
