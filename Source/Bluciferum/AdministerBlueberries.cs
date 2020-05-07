@@ -6,7 +6,7 @@ using System.Text;
 using RimWorld;
 using Verse;
 
-namespace Bluciferum
+namespace SyrBlueberries
 {
     [StaticConstructorOnStartup]
     public static class AdministerBlueberries

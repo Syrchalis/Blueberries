@@ -6,7 +6,7 @@ using System.Text;
 using RimWorld;
 using Verse;
 
-namespace Bluciferum
+namespace SyrBlueberries
 {
     public class Comp_Bluciferum : CompDrug
     {

@@ -5,7 +5,7 @@ using System.Text;
 using RimWorld;
 using Verse;
 
-namespace Bluciferum
+namespace SyrBlueberries
 {
     [DefOf]
     public static class InfectionDefOf
