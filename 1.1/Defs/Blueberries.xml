@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="PlantBase">
+	<defName>Plant_SyrBlueberry</defName>
+	<label>blueberry plant</label>
+	<description>A blue colored berry that grows on bushes, requires good soil to grow quickly. 
+	
+	Blueberries can be harvested regularly without having to sow the plant again, but new plants have to grow for a while before they can be harvested. These blueberries have been genetically modified to not only taste great, but help boost the immune system. They can be made into valuable wine or a medical drug.</description>
+	<statBases>
+		<MaxHitPoints>120</MaxHitPoints>
+		<Nutrition>0.35</Nutrition>
+	</statBases>
+    <graphicData>
+      <texPath>Things/Plant/BlueberryPlant</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<selectable>true</selectable>
+    <neverMultiSelect>false</neverMultiSelect>
+	<pathCost>10</pathCost>
+    <plant>
+      <harvestedThingDef>RawBlueberries</harvestedThingDef>
+      <harvestYield>8</harvestYield>
+      <sowMinSkill>7</sowMinSkill>
+      <growDays>12</growDays>
+      <sowWork>400</sowWork>
+      <harvestWork>500</harvestWork>
+	  <lifespanDaysPerGrowDays>50</lifespanDaysPerGrowDays>
+	  <dieIfLeafless>true</dieIfLeafless>
+	  <harvestTag>Standard</harvestTag>
+	  <sowTags>
+		<li>Ground</li>
+		<li>Hydroponic</li>
+	  </sowTags>
+      <fertilitySensitivity>1.25</fertilitySensitivity>
+	  <harvestAfterGrowth>0.33</harvestAfterGrowth>
+      <immatureGraphicPath>Things/Plant/BlueberryPlantImmature</immatureGraphicPath>
+	  <visualSizeRange>0.3~1.0</visualSizeRange>
+	  <topWindExposure>0.3</topWindExposure>
+      <wildOrder>2</wildOrder>
+	  <purpose>Health</purpose>
+   </plant>
+  </ThingDef>
+
+  <ThingDef ParentName="PlantFoodRawBase">
+	<defName>RawBlueberries</defName>
+	<label>blueberries</label>
+	<description>Blue colored berry that grows in bushes. Nice to eat, even when raw. Can be fermented into blueberry wine, which is very valuable or into a medical drug, which helps boost the immune system. Alternatively they can be eaten raw to get the same effect as from wine, albeit with a much shorter duration.</description>
+	<graphicData>
+      <texPath>Things/Item/Resource/PlantFoodRaw/Blueberries</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>2.4</MarketValue>
+	  <Mass>0.027</Mass>
+      <FoodPoisonChanceFixedHuman>0.0</FoodPoisonChanceFixedHuman>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>14</daysToRotStart>
+		<rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+    <ingestible>
+      <preferability>DesperateOnly</preferability> <!-- So pawns don't eat them for food if other stuff is available -->
+	  <tasteThought></tasteThought>
+	  <baseIngestTicks>24</baseIngestTicks>
+      <foodType>VegetableOrFruit</foodType>
+      <maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
+      <optimalityOffsetHumanlikes>-10</optimalityOffsetHumanlikes>
+      <optimalityOffsetFeedingAnimals>-30</optimalityOffsetFeedingAnimals>
+      <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>BlueberryHigh</hediffDef>
+          <severity>0.0625</severity>
+        </li>
+      </outcomeDoers>
+    </ingestible>
+  </ThingDef>
+   
+  <ThingDef ParentName="ResourceBase">
+    <defName>Mash</defName>
+    <label>mash</label>
+    <description>Un-fermented wine. This substance needs to ferment in a fermenting barrel before it becomes drinkable wine. Takes twice as long as wort to ferment.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/Mash</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <rotatable>false</rotatable>
+    <stackLimit>25</stackLimit>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <statBases>
+      <DeteriorationRate>1.0</DeteriorationRate>
+      <MarketValue>12.0</MarketValue>
+      <Mass>0.8</Mass>
+      <Flammability>0.2</Flammability>
+			<MaxHitPoints>60</MaxHitPoints>
+    </statBases>
+    <tickerType>Rare</tickerType>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>10</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <RecipeDef>
+	<defName>Make_Mash</defName>
+	<label>make mash</label>
+	<description>Make mash from blueberries.</description>
+	<jobString>Making mash.</jobString>
+	<workSpeedStat>DrugCookingSpeed</workSpeedStat>
+	<workSkill>Cooking</workSkill>
+	<effectWorking>Cook</effectWorking>
+	<soundWorking>Recipe_Brewing</soundWorking>
+	<allowMixingIngredients>true</allowMixingIngredients>
+	<workAmount>1000</workAmount>
+	<targetCountAdjustment>1</targetCountAdjustment>
+	<ingredients>
+		<li>
+			<filter>
+				<thingDefs>
+					<li>RawBlueberries</li>
+				</thingDefs>
+			</filter>
+			<count>25</count>
+		</li>
+	</ingredients>
+	<fixedIngredientFilter>
+		<thingDefs>
+			<li>RawBlueberries</li>
+		</thingDefs>
+	</fixedIngredientFilter>
+	<products>
+		<Mash>5</Mash>
+	</products>
+  </RecipeDef>
+	
+  <ThingDef ParentName="DrugBase">
+      <defName>BlueberryWine</defName>
+      <label>blueberry wine</label>
+      <description>Wine made from blueberries. It makes you slightly more drunk than beer, but also gives you the immune boosting benefits of blueberries. Takes a long time to ferment, but is also very valuable, making it a great item to sell.</description>
+      <graphicData>
+		  <texPath>Things/Item/Resource/Blueberrywine</texPath>
+		  <graphicClass>Graphic_StackCount</graphicClass>
+	  </graphicData>
+	  <rotatable>false</rotatable>
+	  <stackLimit>25</stackLimit>
+      <statBases>
+		  <DeteriorationRate>0.5</DeteriorationRate>
+		  <MarketValue>24</MarketValue>
+		  <Mass>0.1</Mass>
+		  <Flammability>0.5</Flammability>
+      </statBases>
+    <ingestible>
+      <foodType>Fluid, Processed, Liquor</foodType>
+      <preferability>NeverForNutrition</preferability>
+      <joyKind>Chemical</joyKind>
+      <joy>0.3</joy>
+      <nurseable>true</nurseable>
+      <drugCategory>Social</drugCategory>
+      <ingestSound>Ingest_Beer</ingestSound>
+      <ingestHoldOffsetStanding>
+        <northDefault>
+          <offset>(0.2,0,0.2)</offset>
+          <behind>true</behind>
+        </northDefault>
+        <east>
+          <offset>(0.2,0,0)</offset>
+        </east>
+        <south>
+          <offset>(-0.2,0,-0.2)</offset>
+        </south>
+        <west>
+          <offset>(-0.2,0,0)</offset>
+        </west>
+      </ingestHoldOffsetStanding>
+      <ingestHoldUsesTable>false</ingestHoldUsesTable>
+      <ingestCommandString>Drink {0}</ingestCommandString>
+      <ingestReportString>Drinking {0}.</ingestReportString>
+      <chairSearchRadius>25</chairSearchRadius>
+      <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>AlcoholHigh</hediffDef>
+          <severity>0.24</severity>
+          <toleranceChemical>Alcohol</toleranceChemical>
+        </li>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>AlcoholTolerance</hediffDef>
+          <severity>0.02</severity>
+		  <divideByBodySize>true</divideByBodySize>
+		</li>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>BlueberryHigh</hediffDef>
+          <severity>0.5</severity>
+        </li>
+      </outcomeDoers>
+    </ingestible>
+      <comps>
+		<li Class="CompProperties_Drug">
+		    <chemical>Alcohol</chemical>
+			<addictiveness>0.010</addictiveness>
+			<minToleranceToAddict>0.25</minToleranceToAddict>
+			<existingAddictionSeverityOffset>0.20</existingAddictionSeverityOffset>
+			<needLevelOffset>1</needLevelOffset>
+			<listOrder>15</listOrder>
+		</li>
+      </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="MakeableDrugPillBase">
+    <defName>Bluciferum</defName>
+    <label>bluciferum</label>
+    <description>A refined version of the blueberries' immune boosting substances. Improves recovery from illness. The only side effect is tiredness. Despite it's name, it's neither addictive nor in any way related to Luciferum, rather the name was a marketing stunt of the glitterworld company that developed the drug.
+
+It also helps cure Gut Worms and Muscle Parasites, though more than one dose of Bluciferum may be required. Recovery from fibrous and sensory mechanites can also be sped up with Bluciferum. It does however not affect the much more powerful Luciferum mechanites in any way.</description>
+    <graphicData>
+      <texPath>Things/Item/Drug/Bluciferum</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <socialPropernessMatters>false</socialPropernessMatters>
+    <rotatable>false</rotatable>
+    <statBases>
+      <WorkToMake>600</WorkToMake>
+      <MarketValue>32</MarketValue>
+      <Mass>0.005</Mass>
+      <Flammability>0.3</Flammability>
+    </statBases>
+    <techLevel>Industrial</techLevel>
+    <ingestible>
+      <drugCategory>Medical</drugCategory>
+      <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>BluciferumHigh</hediffDef>
+          <severity>0.5</severity>
+        </li>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>BlueberryHigh</hediffDef>
+          <severity>0.5</severity>
+        </li>
+      </outcomeDoers>
+    </ingestible>
+    <recipeMaker>
+      <recipeUsers>
+        <li>DrugLab</li>
+      </recipeUsers>
+    </recipeMaker>
+    <costList>
+	    <RawBlueberries>8</RawBlueberries>
+      <Neutroamine>2</Neutroamine>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Drug">
+        <listOrder>1001</listOrder>
+		    <compClass>SyrBlueberries.Comp_Bluciferum</compClass>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <HediffDef>
+    <defName>BlueberryHigh</defName>
+    <label>Blueberries</label>
+    <description>A mildly positive effect on the body's immune system caused by the ingestion of blueberries.</description>
+    <defaultLabelColor>(0,0.7,1)</defaultLabelColor>
+    <hediffClass>HediffWithComps</hediffClass>
+	<maxSeverity>1.0</maxSeverity>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-0.5</severityPerDay>
+      </li>
+    </comps>
+    <stages>
+        <li>
+          <minSeverity>0</minSeverity>
+            <capMods>
+              <li>
+                <capacity>BloodFiltration</capacity>
+                <offset>0.4</offset>
+              </li>
+            </capMods>
+        </li>
+      </stages>
+  </HediffDef>
+  
+  <HediffDef>
+    <defName>BluciferumHigh</defName>
+    <label>Bluciferum</label>
+    <description>A strong positive effect on the body's immune system caused by the ingestion of refined blueberry extract in the form of bluciferum.</description>
+    <defaultLabelColor>(0,0.4,1)</defaultLabelColor>
+    <hediffClass>HediffWithComps</hediffClass>
+	<maxSeverity>1.0</maxSeverity>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-0.5</severityPerDay>
+      </li>
+    </comps>
+    <stages>
+        <li>
+          <minSeverity>0</minSeverity>
+          <restFallFactorOffset>0.5</restFallFactorOffset>
+          <statOffsets>
+            <ImmunityGainSpeed>0.2</ImmunityGainSpeed>
+          </statOffsets>
+        </li>
+      </stages>
+  </HediffDef>
+  
+  <RecipeDef>
+    <defName>AdministerBlueberries</defName>
+    <label>administer blueberries</label>
+    <description>Administer blueberries.</description>
+    <workerClass>Recipe_AdministerIngestible</workerClass>
+    <jobString>Administering blueberries.</jobString>
+    <targetsBodyPart>false</targetsBodyPart>
+    <anesthetize>false</anesthetize>
+    <workAmount>600</workAmount>
+    <dontShowIfAnyIngredientMissing>true</dontShowIfAnyIngredientMissing>
+    <surgerySuccessChanceFactor>99999</surgerySuccessChanceFactor>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>RawBlueberries</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>RawBlueberries</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+  </RecipeDef>
+  
+</Defs>

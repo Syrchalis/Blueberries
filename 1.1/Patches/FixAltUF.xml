@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- This will try to find any mod using the other version of Universal Fermenter and switch them over to using the same version as this mod (by OwlChemist) -->
+<Patch>
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/JobDef[defName="FillUniversalFermenter"]/driverClass[text()="Kubouch.JobDriver_FillUniversalFermenter"]</xpath>
+				<value>
+					<driverClass>UniversalProcessors.JobDriver_FillUniversalFermenter</driverClass>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/JobDef[defName="TakeProductOutOfUniversalFermenter"]/driverClass[text()="Kubouch.JobDriver_TakeProductOutOfUniversalFermenter"]</xpath>
+				<value>
+					<driverClass>UniversalProcessors.JobDriver_TakeProductOutOfUniversalFermenter</driverClass>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/WorkGiverDef[defName="UF_WorkGiver_TakeProductOutOfUniversalFermenter"]/giverClass[text()="Kubouch.WorkGiver_TakeProductOutOfUniversalFermenter"]</xpath>
+				<value>
+					<giverClass>UniversalProcessors.WorkGiver_TakeProductOutOfUniversalFermenter</giverClass>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/WorkGiverDef[defName="UF_WorkGiver_FillUniversalFermenter"]/giverClass[text()="Kubouch.WorkGiver_FillUniversalFermenter"]</xpath>
+				<value>
+					<giverClass>UniversalProcessors.WorkGiver_FillUniversalFermenter</giverClass>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAttributeSet">
+				<xpath>Defs/ThingDef/comps/li[@Class="Kubouch.CompProperties_UniversalFermenter"]</xpath>
+				<attribute>Class</attribute>
+				<value>UniversalProcessors.CompProperties_UniversalFermenter</value>
+			</li>
+		</operations>
+	</Operation>
+</Patch>		
