@@ -29,5 +29,6 @@ They can also be used as food or made into meals, however that is not a very eff
 	</modDependencies>
 	<loadAfter>
 			<li>syrchalis.universalfermenter</li>
+			<li>dismarzero.VGP.VGPGardenDrinks</li>
 	</loadAfter>
 </ModMetaData>
