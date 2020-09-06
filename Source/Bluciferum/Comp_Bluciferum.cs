@@ -17,12 +17,12 @@ namespace SyrBlueberries
             if (ingester.health.hediffSet.HasHediff(InfectionDefOf.MuscleParasites))
             {
                 HediffWithComps hediff = (HediffWithComps)ingester.health.hediffSet.GetFirstHediffOfDef(InfectionDefOf.MuscleParasites);
-                hediff.comps.First(h => h is HediffComp_TendDuration).CompTended_NewTemp(1.25f, 0);
+                hediff.comps.First(h => h is HediffComp_TendDuration).CompTended_NewTemp(1.25f, 1f);
             }
             if (ingester.health.hediffSet.HasHediff(InfectionDefOf.GutWorms))
             {
                 HediffWithComps hediff = (HediffWithComps)ingester.health.hediffSet.GetFirstHediffOfDef(InfectionDefOf.GutWorms);
-                hediff.comps.First(h => h is HediffComp_TendDuration).CompTended_NewTemp(1.25f, 0);
+                hediff.comps.First(h => h is HediffComp_TendDuration).CompTended_NewTemp(1.25f, 1f);
             }
             if (ingester.health.hediffSet.HasHediff(InfectionDefOf.FibrousMechanites))
             {

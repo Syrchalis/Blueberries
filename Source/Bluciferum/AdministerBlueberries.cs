@@ -8,6 +8,7 @@ using Verse;
 
 namespace SyrBlueberries
 {
+    //Adds the recipe to administer blueberries to all fleshy pawns
     [StaticConstructorOnStartup]
     public static class AdministerBlueberries
     {
