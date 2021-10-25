@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+<!-- Drug rebalance -->
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName = "Yayo"]/statBases/MarketValue</xpath>
+		<value>
+			<MarketValue>24</MarketValue>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName = "PsychiteTea"]/statBases/MarketValue</xpath>
+		<value>
+			<MarketValue>12</MarketValue>
+		</value>
+	</Operation>
+
+	<!-- Adding blueberry wine to UF -->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName = "BarrelProcessor"]/comps/li[@Class="ProcessorFramework.CompProperties_Processor"]/processes</xpath>
+		<value>
+			<li>BlueberryWine</li>
+		</value>
+	</Operation>
+
+	<!-- Removing blueberries from default filter for meals -->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/RecipeDef[@Name = "CookMealBase"]/defaultIngredientFilter/disallowedThingDefs</xpath>
+		<value>
+			<li>RawBlueberries</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>[SYR] Harpy</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/RecipeDef[@Name = "CookMealBase_Harpy"]/defaultIngredientFilter/disallowedThingDefs</xpath>
+					<value>
+						<li>RawBlueberries</li>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>[SYR] Thrumkin</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/RecipeDef[@Name = "CookMealBase_Thrumkin"]/defaultIngredientFilter/disallowedThingDefs</xpath>
+					<value>
+						<li>RawBlueberries</li>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+	
+		<!--VGP Compatibility-->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>VGP Vegetable Garden</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/ThingDef[defName = "Rawblueberry"]</xpath>
+				</li>
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/ThingDef[defName = "Plantblueberry"]</xpath>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>VGP Garden Drinks UF</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName = "VG_LargeFermentingBarrel"]/comps/li[@Class="ProcessorFramework.CompProperties_Processor"]/processes</xpath>
+          <value>
+            <li>BlueberryWine</li>
+          </value>
+				</li>
+        <li Class="PatchOperationRemove">
+          <xpath>Defs/RecipeDef[defName = "BrewBlueberrySoda"]</xpath>
+        </li>
+				<!--<li Class="PatchOperationFindMod">
+					<mods>
+						<li>VGP Vegetable Garden</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+
+						</operations>
+					</match>
+				</li>-->
+			</operations>
+		</match>
+	</Operation>
+
+</Patch>

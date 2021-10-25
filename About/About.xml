@@ -22,14 +22,13 @@ They can also be used as food or made into meals, however that is not a very eff
         <downloadUrl>https://github.com/pardeike/HarmonyRimWorld/releases/latest</downloadUrl>
     </li>
     <li>
-        <packageId>syrchalis.universalfermenter</packageId>
-        <displayName>Universal Fermenter</displayName>
-        <steamWorkshopUrl>steam://url/CommunityFilePage/2073225100</steamWorkshopUrl>
-        <downloadUrl>https://github.com/Syrchalis/UniversalFermenter</downloadUrl>
+        <packageId>syrchalis.processor.framework</packageId>
+        <displayName>Processor Framework</displayName>
+        <steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2633514537</steamWorkshopUrl>
+        <downloadUrl>https://github.com/Syrchalis/ProcessorFramework</downloadUrl>
     </li>
 	</modDependencies>
 	<loadAfter>
-			<li>syrchalis.universalfermenter</li>
-			<li>dismarzero.VGP.VGPGardenDrinks</li>
+			<li>syrchalis.processor.framework</li>
 	</loadAfter>
 </ModMetaData>
