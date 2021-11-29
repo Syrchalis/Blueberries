@@ -82,7 +82,7 @@
 		<label>mash</label>
 		<description>Un-fermented wine. This substance needs to ferment in a fermenting barrel before it becomes drinkable wine. Takes twice as long as wort to ferment.</description>
 		<graphicData>
-			<texPath>Things/Item/Resource/Mash</texPath>
+			<texPath>Things/Item/Resource/BlueberryMash</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<rotatable>false</rotatable>
